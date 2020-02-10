@@ -59,8 +59,8 @@ variable "aks_agent_vm_size" {
 }
 
 variable "kubernetes_version" {
-  description = "The version of Kubernetes."
-  default     = "1.15.2"
+  description = "The version of Kubernetes. Run 'az aks get-versions --location \"West Europe\"' to get list of available versions."
+  default     = "1.17.0"
 }
 
 variable "aks_service_cidr" {
